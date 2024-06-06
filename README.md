@@ -13,11 +13,9 @@ For usage examples, consult the [`demo.c`](/demo.c) and [`test.c`](/test.c) prog
 You can compile and execute them by using these commands:
 
 ```bash
-cc -o demo demo.c lib/st-hash.c 
-./demo 
+cc -o demo demo.c lib/st-hash.c && ./demo 
 
-cc -o test test.c lib/st-hash.c 
-./test 
+cc -o test test.c lib/st-hash.c && ./test 
 ```
 
 ## License
