@@ -1,14 +1,16 @@
 # `size_t` hash
 
-A lighweight C library that offers a portable implementation of the Murmur3 hashing algorithm where the resulting hash is of type `size_t`. Inspired by [this implementation](https://github.com/PeterScott/murmur3).
+A simple C implementation of the Murmur3 hashing algorithm with an output hash of type `size_t`. 
+
+Inspired by [PeterScott](https://github.com/PeterScott)'s [implementation](https://github.com/PeterScott/murmur3).
 
 ## Usage
 
-First, include the [`st-hash.h`](/lib/st-hash.h) and [`st-hash.c`](/lib/st-hash.c) files in your project, found in the [`lib`](/lib) directory. Then, compile them alongside your source files.
+Include the [`st-hash.h`](/lib/st-hash.h) and [`st-hash.c`](/lib/st-hash.c) files in your project, found in the [`lib`](/lib) directory, then compile them with your source files.
 
 For usage examples, consult the [`demo.c`](/demo.c) and [`test.c`](/test.c) programs provided in the project.
 
-Compile and execute them using these commands:
+You can compile and execute them by using these commands:
 
 ```bash
 cc -o demo demo.c lib/st-hash.c 
