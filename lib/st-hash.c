@@ -28,9 +28,9 @@
     __h; \
   })
 
-void sizeTHash (void * key, size_t keyLen, uint32_t seed, size_t * hash) {
+void sizeTHash (void * key, size_t keyLength, uint32_t seed, size_t * hash) {
   uint8_t * data = (uint8_t *) key;
-  size_t nblocks = keyLen / 8;
+  size_t nblocks = keyLength / 8;
 
   uint32_t h1 = seed;
   uint32_t h2 = seed;
@@ -65,7 +65,7 @@ void sizeTHash (void * key, size_t keyLen, uint32_t seed, size_t * hash) {
   uint32_t k1 = 0;
   uint32_t k2 = 0;
 
-  switch (keyLen & 7) {
+  switch (keyLength & 7) {
   case 7: 
     k2 ^= tail[6] << 16;
   case 6: 
@@ -90,8 +90,8 @@ void sizeTHash (void * key, size_t keyLen, uint32_t seed, size_t * hash) {
     h1 ^= k1;
   }
 
-  h1 ^= (uint32_t) keyLen;
-  h2 ^= (uint32_t) keyLen;
+  h1 ^= (uint32_t) keyLength;
+  h2 ^= (uint32_t) keyLength;
 
   h1 += h2;
   h2 += h1;
