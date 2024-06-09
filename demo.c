@@ -19,7 +19,7 @@ int main (int argc, char ** argv) {
 
   printf("Input: \"%s\"\n", argv[1]);
 
-  sizeTHash(argv[1], strlen(argv[1]), seed, &hash);
+  getSizeTHash(argv[1], strlen(argv[1]), seed, &hash);
 
   printf("Hash: %" PRIxMAX "\n", (uintmax_t) hash);
 

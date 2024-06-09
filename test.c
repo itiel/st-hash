@@ -44,7 +44,7 @@ int main() {
       size_t expected = expectedHashes[i][j];
       size_t hash;
 
-      sizeTHash((void*) inputs[i], strlen(inputs[i]), seeds[j], &hash);
+      getSizeTHash((void*) inputs[i], strlen(inputs[i]), seeds[j], &hash);
 
       printf(
         "Seed: %u\t| Expected: %" PRIxMAX "\t| Hash: %" PRIxMAX "\n", 

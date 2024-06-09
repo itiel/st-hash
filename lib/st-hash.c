@@ -28,7 +28,7 @@
     __h; \
   })
 
-void sizeTHash (void * key, size_t keyLength, uint32_t seed, size_t * hash) {
+void getSizeTHash (void * key, size_t keyLength, uint32_t seed, size_t * hash) {
   uint8_t * data = (uint8_t *) key;
   size_t nblocks = keyLength / 8;
 

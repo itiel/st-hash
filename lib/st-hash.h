@@ -6,6 +6,6 @@
 #include <stdint.h>
 #include <stddef.h>
 
-void sizeTHash (void * key, size_t keyLength, uint32_t seed, size_t * hash);
+void getSizeTHash (void * key, size_t keyLength, uint32_t seed, size_t * hash);
 
 #endif /* _ST_HASH_H_ */
